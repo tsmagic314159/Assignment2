@@ -1,2 +1,2 @@
 # Assignment2
- jl
+ An static website for practice.
