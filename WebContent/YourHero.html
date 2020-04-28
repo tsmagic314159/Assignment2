@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Creat Your Hero</title>
+<link rel="icon" href="weblogo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="weblogo.ico" type="image/x-icon">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<script src="modernizr-1.5.js"></script>
+<script type="text/javascript" src="localstorage.js"></script>
+</head>
+<body>
+	<section id="back"></section>
+	<img id="top" alt="pic" src="key.jpg">
+	<nav class="horizontal">
+			<ul>
+				<li><a href="JLTamplate.html"><img alt="backgroud" src="background.jpg">    <b>Home Page</b></a></li>
+				<li><a href="background.html"><img alt="justice logo" src="justicelogo.png">    <b>Background</b></a></li>
+				<li><a href="heroes.html"><img alt="superman logo" src="superlogo.png">  <b>Heroes</b></a></li>
+				<li><a href="joker.html"><img alt="villain logo" src="villainlogo.png">  <b>Super Villains</b></a></li>
+				<li><a href="YourHero.html"><img alt="fist logo" src="fistlogo.png">  <b>Create Your Hero</b></a></li>
+			</ul>
+	</nav>
+	<section id="yoursection">
+		<section id="Yourherotext">
+			<img alt="mystery person" src="mysteryperson.png" id="mysteryperson">
+			<h1>The League needs new blood......</h1>
+			<p>Join us to fight against the evil side</p>
+			<section id="form">
+				<fieldset id ="yourheroform">
+					<legend>Your information</legend>
+					<section>
+					<label for="firstname">First Name*</label>
+					<input name="firstname" required="required" placeholder="Enter your first name" id="firstname">
+					</section>
+					<section>
+					<label for="name">Name*</label>
+					<input name="name" required="required" placeholder="Enter your name" id="name">
+					</section>
+					<section>
+					<label>Gender*</label>
+						<fieldset class="option">
+							<section id="radi">
+							<label for="male">male</label>
+							<input name="gender" id="male" type="radio" value="male">
+							</section>
+							<section id="radio">
+							<label for="female">female</label>
+							<input name="gender" id="female" type="radio" value="female">
+							</section>
+						</fieldset>
+					</section>
+					<section>
+					<label for="nickname">Nickname*</label>
+					<input name="nickname" required="required" placeholder="Nickname for your hero" id="nickname">
+					</section>
+					<section>
+						<label for="phone">Phone Number*</label>
+						<input name="phone" required="required" placeholder="1-nnnnnnnnnn" pattern="^1\d{10}$" id="phone">
+					</section>
+					<section>
+					<label for="email">E-mail*</label>
+					<input name="email" required="required" placeholder="Enter your E-mail" type="email" id="email">
+					</section>
+		<section id="lab">
+			<p>Describe your superpower and the background story your hero has</p>
+			<textarea rows="15" cols="75" name="text" id="area"></textarea>
+		</section>
+				</fieldset>
+
+			</section>
+		</section>
+		<section id="button">
+			<input type="submit" value="Send" onclick="store()">
+			<input type="button" value="Clear" onclick="cleartext()">
+		</section>
+		<script type="text/javascript">
+			function cleartext() {
+				document.getElementById("firstname").value="";
+				document.getElementById("name").value="";
+				document.getElementById("nickname").value="";
+				document.getElementById("phone").value="";
+				document.getElementById("email").value="";
+				document.getElementById("area").value="";
+				
+			}
+		</script>
+		<img alt="superman" src="becomesuperman.jpg" id="becomesuperman">
+		<hr>
+	<footer>
+		<cite>Product by DC<br>Contact us: <a href="mailto:tsmagic@126.com">tsmagic@126.com</a><br>More information: <a href="https://en.wikipedia.org/wiki/Justice_League">Justice League - Wikipedia</a></cite>
+		<audio src="yourhero.mp3" autoplay="autoplay" loop="loop" preload="auto" controls="controls"></audio>
+	</footer>
+	</section>
+</body>
+</html>
